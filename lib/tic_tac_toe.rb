@@ -110,5 +110,3 @@ def play
   end
 
 end
-
-
