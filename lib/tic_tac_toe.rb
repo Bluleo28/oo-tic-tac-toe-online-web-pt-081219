@@ -67,6 +67,7 @@ end
 def full?
   @board.all?{|occupied| occupied != " "}
 end
+
 def draw?
   !(won?) && (full?)
 end
@@ -82,25 +83,17 @@ def winner
     end
   end
 end
-end
 
 def play
-  while over? == false
-    turn
-  end
-  if won?
-    puts "Congratulations # {winner}!"
-  elsif draw?
-    puts "Cats Game!"
+    until over? == true
+      turn
     end
 
+    if won?
+      puts "Congratulations #{winner}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
   end
-
-
-
-game = TicTacToe.new
-game.play
-end
-end
 
 end
