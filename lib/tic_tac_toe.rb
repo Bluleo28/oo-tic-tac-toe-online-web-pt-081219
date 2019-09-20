@@ -73,11 +73,11 @@ def draw?
 end
 
 def over?
-  if draw? == true || full? == true || won? !=nil 
+  if draw? == true || full? == true || won? !=nil
     true
-  else 
-    false 
-  end 
+  else
+    false
+  end
 end 
 
 def winner
@@ -90,7 +90,7 @@ def winner
       nil
     end
   end
-end 
+end
 
 def play
     until over? == true
