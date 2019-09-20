@@ -78,7 +78,7 @@ def over?
   else
     false
   end
-end 
+end
 
 def winner
   WIN_COMBINATIONS.detect do |win_combo|
