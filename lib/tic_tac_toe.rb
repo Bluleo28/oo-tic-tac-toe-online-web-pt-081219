@@ -72,6 +72,14 @@ def draw?
   !(won?) && (full?)
 end
 
+def over?
+  if draw? == true || full? == true || won? !=nil 
+    true
+  else 
+    false 
+  end 
+end 
+
 def winner
   WIN_COMBINATIONS.detect do |win_combo|
     if (@board[win_combo[0]]) == "X" && (@board[win_combo[1]]) == "X" && (@board[win_combo[2]]) == "X"
