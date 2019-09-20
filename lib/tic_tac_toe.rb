@@ -110,3 +110,6 @@ def play
   end
 
 end
+
+bin/tictactoe
+#play
