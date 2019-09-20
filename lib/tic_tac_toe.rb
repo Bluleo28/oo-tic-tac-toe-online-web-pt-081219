@@ -89,7 +89,7 @@ def play
       turn
     end
 
-    if won?.is_a(Array) == true
+    if won?.is_a?(Array) == true
       if current_player == "X"
         player = 'O'
       else
