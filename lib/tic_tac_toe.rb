@@ -89,9 +89,14 @@ def play
       turn
     end
 
-    if won?
+    if won?.is_a(Array) == true 
+      if current_player == "X"
+        player = 'O'
+      else 
+        player = "X"
+      end 
       puts "Congratulations #{winner}!"
-    elsif draw?
+    elsif draw? == true 
       puts "Cat's Game!"
     end
   end
