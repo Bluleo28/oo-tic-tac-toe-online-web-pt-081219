@@ -82,7 +82,6 @@ def winner
       nil
     end
   end
-end
 
 def play
     until over? == true
@@ -95,7 +94,7 @@ def play
       else
         player = "X"
       end
-      puts "Congratulations #{winner}!"
+      puts "Congratulations #{player}!"
     elsif draw? == true
       puts "Cat's Game!"
     end
