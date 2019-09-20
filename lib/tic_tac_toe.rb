@@ -91,7 +91,7 @@ def play
     puts "Congratulations {winner}!"
   elsif draw?
     puts "Cats Game!"
-  end 
+  end
 
 end
 
