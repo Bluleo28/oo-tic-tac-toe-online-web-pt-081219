@@ -111,5 +111,4 @@ def play
 
 end
 
-bin/tictactoe
-#play
+
