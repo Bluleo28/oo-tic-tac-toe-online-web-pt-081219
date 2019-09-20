@@ -100,6 +100,7 @@ def play
 
 game = TicTacToe.new
 game.play
-end
+  end
+end 
 
 end
